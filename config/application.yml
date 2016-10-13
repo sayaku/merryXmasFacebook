@@ -1,0 +1,16 @@
+defaults: &defaults
+ Facebook:
+  app_name: "merryXmas"
+  facebook_app_id: ""
+  facebook_secret: ""
+  domain: "http://localhost:3000/"
+
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults  
