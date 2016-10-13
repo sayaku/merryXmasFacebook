@@ -1,0 +1,20 @@
+   <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+   <p>hi ruby on rails 5</p>
+   <canvas id="demoCanvas" width="500" height="300"></canvas>
+
+   <script>
+  
+           // code here.
+
+           var stage = new createjs.Stage("demoCanvas");
+           var circle = new createjs.Shape();
+           circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 50);
+           circle.x = 100;
+           circle.y = 100;
+           stage.addChild(circle);
+           stage.update();
+
+           var data = stage.toDataURL("image/jpeg");
+           console.log(data);
+          
+    </script>
